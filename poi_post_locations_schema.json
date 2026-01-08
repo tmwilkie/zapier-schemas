@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "properties": {
+    "city_01": {
+      "type": "string",
+      "description": "The 1st target city or service area location."
+    },
+    "city_02": {
+      "type": "string",
+      "description": "The 2nd target city or service area location."
+    },
+    "city_03": {
+      "type": "string",
+      "description": "The 3rd target city or service area location."
+    },
+    "city_04": {
+      "type": "string",
+      "description": "The 4th target city or service area location."
+    },
+    "city_05": {
+      "type": "string",
+      "description": "The 5th target city or service area location."
+    },
+    "city_06": {
+      "type": "string",
+      "description": "The 6th target city or service area location."
+    },
+    "city_07": {
+      "type": "string",
+      "description": "The 7th target city or service area location."
+    },
+    "city_08": {
+      "type": "string",
+      "description": "The 8th target city or service area location."
+    },
+    "city_09": {
+      "type": "string",
+      "description": "The 9th target city or service area location."
+    },
+    "city_10": {
+      "type": "string",
+      "description": "The 10th target city or service area location."
+    },
+    "city_11": {
+      "type": "string",
+      "description": "The 11th target city or service area location."
+    },
+    "city_12": {
+      "type": "string",
+      "description": "The 12th target city or service area location."
+    }
+  },
+  "required": [
+    "city_01",
+    "city_02",
+    "city_03",
+    "city_04",
+    "city_05",
+    "city_06",
+    "city_07",
+    "city_08",
+    "city_09",
+    "city_10",
+    "city_11",
+    "city_12"
+  ]
+}
