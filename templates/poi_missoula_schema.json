@@ -1,5 +1,5 @@
 {
-  "name": "get_poi_list",
+  "name": "get_points_of_interest",
   "strict": true,
   "schema": {
     "type": "object",
