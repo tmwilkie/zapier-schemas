@@ -1,45 +1,38 @@
 {
-  "name": "get_points_of_interest",
+  "name": "get_points_of_interest_flat",
   "strict": true,
   "schema": {
     "type": "object",
     "properties": {
-      "points_of_interest": {
-        "type": "array",
-        "description": "A list of the top 12 specific points of interest.",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "number",
-              "description": "ID number 1-12"
-            },
-            "poi_name": {
-              "type": "string",
-              "description": "The official name of the attraction"
-            },
-            "full_address": {
-              "type": "string",
-              "description": "The specific street address"
-            },
-            "article_topic": {
-              "type": "string",
-              "description": "A catchy, SEO-friendly title for the article"
-            }
-          },
-          "required": [
-            "id",
-            "poi_name",
-            "full_address",
-            "article_topic"
-          ],
-          "additionalProperties": false
-        }
-      }
+      "poi_01": { "$ref": "#/$defs/poi_item" },
+      "poi_02": { "$ref": "#/$defs/poi_item" },
+      "poi_03": { "$ref": "#/$defs/poi_item" },
+      "poi_04": { "$ref": "#/$defs/poi_item" },
+      "poi_05": { "$ref": "#/$defs/poi_item" },
+      "poi_06": { "$ref": "#/$defs/poi_item" },
+      "poi_07": { "$ref": "#/$defs/poi_item" },
+      "poi_08": { "$ref": "#/$defs/poi_item" },
+      "poi_09": { "$ref": "#/$defs/poi_item" },
+      "poi_10": { "$ref": "#/$defs/poi_item" },
+      "poi_11": { "$ref": "#/$defs/poi_item" },
+      "poi_12": { "$ref": "#/$defs/poi_item" }
     },
     "required": [
-      "points_of_interest"
+      "poi_01", "poi_02", "poi_03", "poi_04", "poi_05", "poi_06",
+      "poi_07", "poi_08", "poi_09", "poi_10", "poi_11", "poi_12"
     ],
-    "additionalProperties": false
+    "additionalProperties": false,
+    "$defs": {
+      "poi_item": {
+        "type": "object",
+        "properties": {
+          "poi_name": { "type": "string", "description": "Name of the attraction" },
+          "full_address": { "type": "string", "description": "Street address of the attraction" },
+          "article_topic": { "type": "string", "description": "SEO Title for the article" }
+        },
+        "required": ["poi_name", "full_address", "article_topic"],
+        "additionalProperties": false
+      }
+    }
   }
 }
