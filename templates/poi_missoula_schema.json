@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "poi_name": "Missoula Art Museum",
+    "full_address": "335 N Pattee St, Missoula, MT 59802",
+    "article_topic": "Exploring the Missoula Art Museum"
+  },
+  {
+    "id": 2,
+    "poi_name": "A Carousel for Missoula",
+    "full_address": "101 Carousel Dr, Missoula, MT 59802",
+    "article_topic": "Family Fun at A Carousel for Missoula"
+  },
+  {
+    "id": 3,
+    "poi_name": "Rocky Mountain Elk Foundation",
+    "full_address": "5705 Grant Creek Rd, Missoula, MT 59808",
+    "article_topic": "Visiting the Rocky Mountain Elk Foundation"
+  }
+]
