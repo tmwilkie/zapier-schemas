@@ -1,20 +1,45 @@
-[
-  {
-    "id": 1,
-    "poi_name": "Missoula Art Museum",
-    "full_address": "335 N Pattee St, Missoula, MT 59802",
-    "article_topic": "Exploring the Missoula Art Museum"
-  },
-  {
-    "id": 2,
-    "poi_name": "A Carousel for Missoula",
-    "full_address": "101 Carousel Dr, Missoula, MT 59802",
-    "article_topic": "Family Fun at A Carousel for Missoula"
-  },
-  {
-    "id": 3,
-    "poi_name": "Rocky Mountain Elk Foundation",
-    "full_address": "5705 Grant Creek Rd, Missoula, MT 59808",
-    "article_topic": "Visiting the Rocky Mountain Elk Foundation"
+{
+  "name": "get_poi_list",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "properties": {
+      "points_of_interest": {
+        "type": "array",
+        "description": "A list of the top 12 specific points of interest.",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "number",
+              "description": "ID number 1-12"
+            },
+            "poi_name": {
+              "type": "string",
+              "description": "The official name of the attraction"
+            },
+            "full_address": {
+              "type": "string",
+              "description": "The specific street address"
+            },
+            "article_topic": {
+              "type": "string",
+              "description": "A catchy, SEO-friendly title for the article"
+            }
+          },
+          "required": [
+            "id",
+            "poi_name",
+            "full_address",
+            "article_topic"
+          ],
+          "additionalProperties": false
+        }
+      }
+    },
+    "required": [
+      "points_of_interest"
+    ],
+    "additionalProperties": false
   }
-]
+}
